@@ -26,7 +26,7 @@ public class Module {
 
     public void addStudent(final Student student) {
 
-        this.students.add(student.getStudentID(), student);
+        this.students.add(student);
 
         student.addModule(this);
 
