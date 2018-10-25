@@ -38,7 +38,7 @@ public class Module {
 
         for (final Student student : students) {
 
-            this.students.add(student.getStudentID(), student);
+            this.students.add(student);
 
             student.addModule(this);
 
