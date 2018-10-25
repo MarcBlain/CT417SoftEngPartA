@@ -2,8 +2,6 @@ package partA;
 
 import java.util.ArrayList;
 
-import java.util.HashMap;
-
 public class Module {
 
 
@@ -12,7 +10,7 @@ public class Module {
 
     public String moduleID;
 
-    private final HashMap<Integer, Student> students = new HashMap();
+    private final ArrayList<Student> students = new ArrayList();
 
 
 
@@ -28,7 +26,7 @@ public class Module {
 
     public void addStudent(final Student student) {
 
-        this.students.put(student.getStudentID(), student);
+        this.students.add(student.getStudentID(), student);
 
         student.addModule(this);
 
@@ -40,7 +38,7 @@ public class Module {
 
         for (final Student student : students) {
 
-            this.students.put(student.getStudentID(), student);
+            this.students.add(student.getStudentID(), student);
 
             student.addModule(this);
 
@@ -52,7 +50,7 @@ public class Module {
 
     public ArrayList<Student> getStudents() {
 
-        return new ArrayList<>(students.values());
+        return new ArrayList<>(students.size());
 
     }
 
