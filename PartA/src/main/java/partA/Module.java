@@ -50,7 +50,7 @@ public class Module {
 
     public ArrayList<Student> getStudents() {
 
-        return new ArrayList<>(students.size());
+        return new ArrayList<Student>(students.size());
 
     }
 

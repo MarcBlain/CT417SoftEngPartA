@@ -58,7 +58,7 @@ public class Course {
 
     public ArrayList<Module> getModules() {
 
-        return new ArrayList<>(modules.size());
+        return new ArrayList<Module>(modules.size());
 
     }
 
@@ -66,7 +66,7 @@ public class Course {
 
     public ArrayList<Student> getStudents() {
 
-        return new ArrayList<>(students.size());
+        return new ArrayList<Student>(students.size());
 
     }
 
