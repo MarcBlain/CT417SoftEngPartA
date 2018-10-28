@@ -46,7 +46,7 @@ public class Course {
 
         for (final Student student : module.getStudents()) {
 
-            students.add(student.getStudentID(), student);
+            students.add(student);
 
             student.addCourse(this);
 
